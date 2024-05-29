@@ -15,9 +15,9 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-  String friendName;
-  String imageUrl;
-  List<Message> messagesList;
+  late String friendName;
+  late String imageUrl;
+  late List<Message> messagesList;
   ScrollController _scrollController =
       ScrollController(initialScrollOffset: 500.0);
 
@@ -45,10 +45,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Container _buildChat() {
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('assets/images/background.jpg'),
-          fit: BoxFit.fill,
-        ),
+        color:Colors.black26
       ),
       child: Column(
         children: [
@@ -140,7 +137,10 @@ class _ChatScreenState extends State<ChatScreen> {
       child: Row(
         children: [
           SizedBox(width: 8.0),
-          Icon(Icons.insert_emoticon, color: CustomColors.kIconColor,),
+          Icon(
+            Icons.insert_emoticon,
+            color: CustomColors.kIconColor,
+          ),
           SizedBox(width: 8.0),
           Expanded(
             child: TextField(
@@ -148,8 +148,14 @@ class _ChatScreenState extends State<ChatScreen> {
                   hintText: 'Type a message...', border: InputBorder.none),
             ),
           ),
-          Icon(Icons.attach_file, color: CustomColors.kIconColor,),
-          Icon(Icons.camera_alt, color: CustomColors.kIconColor,),
+          Icon(
+            Icons.attach_file,
+            color: CustomColors.kIconColor,
+          ),
+          Icon(
+            Icons.camera_alt,
+            color: CustomColors.kIconColor,
+          ),
           SizedBox(width: 8.0)
         ],
       ),

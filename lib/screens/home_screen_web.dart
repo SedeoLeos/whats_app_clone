@@ -4,7 +4,7 @@ import 'package:whatsapp_ui/screens/chat_screen.dart';
 import 'package:whatsapp_ui/widgets/chat_list.dart';
 
 class HomeScreenWeb extends StatelessWidget {
-  const HomeScreenWeb({Key key}) : super(key: key);
+  const HomeScreenWeb({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -11,13 +11,13 @@ class Chat {
   final List<Message> messagesList;
 
   Chat({
-    this.chatId,
-    this.memberOneNumber,
-    this.memberTwoNumber,
-    this.memberOneName,
-    this.memberTwoName,
-    this.memberOneProfilePicUrl,
-    this.memberTwoProfilePicUrl,
-    this.messagesList,
+    required this.chatId,
+    required this.memberOneNumber,
+    required this.memberTwoNumber,
+    required this.memberOneName,
+    required this.memberTwoName,
+    required this.memberOneProfilePicUrl,
+    required this.memberTwoProfilePicUrl,
+    required this.messagesList,
   });
 }
