@@ -53,7 +53,7 @@ class _HomeScreenMobileState extends State<HomeScreenMobile> {
 
   AppBar _normalAppBar() {
     return AppBar(
-      backgroundColor: CustomColors.kPrimaryColor,
+      backgroundColor: const Color.fromARGB(255, 3, 164, 145),
       title: Text('WhatsApp'),
       actions: [
         IconButton(
