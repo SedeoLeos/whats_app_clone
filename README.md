@@ -1,6 +1,6 @@
-# whatsapp_ui
+# whats_app_clone
 
-A new Flutter project.
+Ce ci est une realisation de whatsapp sur flutter .
 
 ## Getting Started
 
